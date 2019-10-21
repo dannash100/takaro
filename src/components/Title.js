@@ -35,19 +35,27 @@ const useStyles = makeStyles({
         height: 70,
         borderRadius: 10,
         padding: 5,
+        boxShadow: '0px 3px rgba(9, 20, 69, 0.4)',
         margin: '5px 0 5px 0'
     },
     downloadIcon: {
         marginTop: 5,
         fill: '#db4636',
     },
+    redText: {
+        color: '#db4636',
+        fontFamily: 'Museo700-Regular',
+        fontSize: 14
+    },
     redButton: {
         fontFamily: 'Museo700-Regular',
         textDecoration: 'underline',
         fontSize: 15,
+        borderRadius: 2,
         backgroundColor: '#db4636',
         color: '#FFFFFF',
         '&:hover': {
+            textDecoration: 'underline',
             backgroundColor: '#db4636',
         }
     }
@@ -66,16 +74,48 @@ function Background() {
                 <Typography className={classes.title} variant='h5'>THE DOWNLOAD ZONE</Typography>
                 <Grid style={{width: '120%', marginTop: 10}} container>
                     <Grid className={classes.creamBox} item xs={5}>
+                          <Grid container>
+                            <Grid item xs={3}>
                         <DownloadIcon width='50px' height='50px' className={classes.downloadIcon}/>
+                            </Grid>
+                            <Grid item xs={8}>
+
+                        <Typography className={classes.redText}>1. Computational Thinking</Typography>
+                            </Grid>
+                        </Grid>
                     </Grid>
                     <Grid style={{marginLeft: 10}} className={classes.creamBox} item xs={5}>
-                     <DownloadIcon width='50px' height='50px' className={classes.downloadIcon}/>
+                        <Grid container>
+                            <Grid item xs={3}>
+                        <DownloadIcon width='50px' height='50px' className={classes.downloadIcon}/>
+                            </Grid>
+                            <Grid item xs={8}>
+
+                        <Typography className={classes.redText}>2. Designing and Developing Digital Outcomes.</Typography>
+                            </Grid>
+                        </Grid>
                         </Grid>
                         <Grid className={classes.creamBox} item xs={5}>
+                        <Grid container>
+                            <Grid item xs={3}>
                         <DownloadIcon width='50px' height='50px' className={classes.downloadIcon}/>
+                            </Grid>
+                            <Grid item xs={8}>
+
+                        <Typography className={classes.redText}>1. Computational Thinking</Typography>
+                            </Grid>
+                        </Grid>
                         </Grid>
                         <Grid style={{marginLeft: 10}} className={classes.creamBox} item xs={5}>
+                        <Grid container>
+                            <Grid item xs={3}>
                         <DownloadIcon width='50px' height='50px' className={classes.downloadIcon}/>
+                            </Grid>
+                            <Grid item xs={8}>
+
+                        <Typography className={classes.redText}>1. Computational Thinking</Typography>
+                            </Grid>
+                        </Grid>
                         </Grid>
                         <Button className={classes.redButton} style={{width: 610, marginTop: 10}} variant='contained'><ArrowIcon style={{fill: 'white'}}/>Read curriculum alignment guide.</Button>
                 </Grid>
