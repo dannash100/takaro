@@ -42,6 +42,7 @@ const useStyles = makeStyles({
   },
   hills: {
     position: 'absolute',
+    height: 600,
     top: '55vh',
     width: '100%',
 
@@ -54,7 +55,7 @@ function Background() {
     <>
     <div className={classes.sky}>
     <img src={clouds} style={{position: 'absolute', height: '40%', right: '10%'}}/>
-      <img src={mountains} style={{position: 'absolute', height: '100%', top: '12%', right: 0}}/>
+      <img src={mountains} style={{position: 'absolute', height: '80%', top: '12%', right: 0}}/>
     <img src={sky} style={{width: '100%', minHeight: 300}}/>
     </div>
 
@@ -64,10 +65,10 @@ function Background() {
     </div>
     <div className={classes.hills}>
       {/* <img src={gate}/> */}
+      <img src={gate} style={{position: 'absolute', right: '12%', top: '43.9%', height: 150}}/>
       <img src={hillTop} style={{marginBottom: -5, width: '100%'}}/>
       <img src={hill} className={classes.hill} style={{minHeight:350, width: '100%'}}/>
     </div>
-      <img src={gate} style={{position: 'absolute', right: '10%', bottom: '3%', height: 150}}/>
     <div className={classes.ground}>
       <img src={grass} style={{position: 'absolute', marginBottom: -5, width: '100%'}}/>
       <img src={earth} style={{height: '100%', width: '100%'}}/>
