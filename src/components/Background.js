@@ -76,8 +76,8 @@ function Background() {
       {/* <img src={gate}/> */}
       <img src={gate} style={{position: 'absolute', right: '10%', top: 311, height: 180}}/>
       <Parallax className="custom-class" x={[0, -60]} tagOuter="figure">
-      <img src={hillTop} style={{marginBottom: -5, bottom: -60, width: '100%', height: 95, position: 'absolute'}}/>
-      <img src={hillTop} style={{marginBottom: -5, bottom: -60, width: '100%', height: 95, left: '100%', position: 'absolute'}}/>
+      <img src={hillTop} style={{height: 90,marginBottom: -5, bottom: -60, width: '100%', height: 95, position: 'absolute'}}/>
+      <img src={hillTop} style={{height: 90, marginBottom: -5, bottom: -60, width: '100%', height: 95, left: '100%', position: 'absolute'}}/>
       </Parallax>
       <img src={hill} className={classes.hill} style={{height: 600, width: '100%'}}/>
     </div>
