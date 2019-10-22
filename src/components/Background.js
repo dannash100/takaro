@@ -21,14 +21,17 @@ const useStyles = makeStyles({
   },
   sea: {
     position: 'absolute',
-    top: 240,
-    height: 300,
+    top: 210,
+    // height: 400,
+    paddingTop: '3%',
+    overflowX: 'hidden',
     width: '100%'
   },
   ground: {
     position: 'absolute',
     top: 1050,
-    width: '100%'
+    width: '100%',
+    overflowX: 'hidden'
   },
   red: {
     position: 'absolute',
@@ -45,6 +48,8 @@ const useStyles = makeStyles({
   hills: {
     position: 'absolute',
     top: 575,
+    paddingTop: 30,
+    overflowX: 'hidden',
     width: '100%',
 
   },
@@ -56,7 +61,7 @@ function Background() {
     <>
     <div className={classes.sky}>
     <img src={clouds} style={{position: 'absolute', height: '40%', right: '10%'}}/>
-      <img src={mountains} style={{position: 'absolute', height: 200, top: 55, right: 0}}/>
+      <img src={mountains} style={{position: 'absolute', height: 200, top: 60, right: 0}}/>
     <img src={sky} style={{width: '100%', minHeight: 300}}/>
     </div>
 

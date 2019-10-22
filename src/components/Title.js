@@ -124,7 +124,7 @@ function Background() {
                 <Typography style={{marginBottom: 5}} className={classes.title} variant='h2'>TE HIKO TĀKARO</Typography>
                 <Typography style={{minHeight: 50}} className={classes.subtitle}>A one stop Digital Technologies solution that weaves together coding, culture and creativity</Typography>
             </div>
-            <div style={{marginTop: 90}} className={classes.element}>
+            <div style={{marginTop: 100}} className={classes.element}>
                 <Typography className={classes.title} variant='h4'>THE DOWNLOAD ZONE</Typography>
                 <Grid style={{width: '103%', marginTop: 10, overflow: 'hidden'}} container>
                     <Grid className={classes.creamBox} item xs={5}>
@@ -182,7 +182,7 @@ function Background() {
                 </Grid>
                 {/* <Typography className={classes.subtitle} variant='h6'>A one stop Digital Technologies solution that weaves together coding, culture and creativity</Typography> */}
             </div>
-            <div style={{marginTop: 150, height: 327.672}} className={classes.element}>
+            <div style={{marginTop: 135, height: 327.672}} className={classes.element}>
             <Typography className={classes.title} variant='h4'>HOW IT WORKS</Typography>
             <Typography style={{marginBottom: 20, width: '92%'}} className={classes.textBody}>Te Hiko Takaro is a kiwi made Games Based Learning solution made by game developers from Pōneke, and expert teachers.</Typography>
             <Grid container>
