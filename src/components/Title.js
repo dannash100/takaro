@@ -63,7 +63,7 @@ const useStyles = makeStyles({
     },
     overlay: {
         position: 'absolute',
-        left: '55%',
+        left: '54%',
         // width: '50%',
         // overflow: 'inherit',
         zIndex: 100,
@@ -182,7 +182,7 @@ function Background() {
                 </Grid>
                 {/* <Typography className={classes.subtitle} variant='h6'>A one stop Digital Technologies solution that weaves together coding, culture and creativity</Typography> */}
             </div>
-            <div style={{marginTop: 150}} className={classes.element}>
+            <div style={{marginTop: 150, height: 327.672}} className={classes.element}>
             <Typography className={classes.title} variant='h4'>HOW IT WORKS</Typography>
             <Typography style={{marginBottom: 20, width: '92%'}} className={classes.textBody}>Te Hiko Takaro is a kiwi made Games Based Learning solution made by game developers from Pōneke, and expert teachers.</Typography>
             <Grid container>
@@ -196,9 +196,9 @@ function Background() {
                 </Grid>
             </Grid>
             </div>
-            <div style={{marginTop: 170}} className={classes.element}>
+            <div style={{marginTop: 150}} className={classes.element}>
                 <Typography className={classes.title} variant='h4'>LEARNING METHODOLOGIES</Typography>
-                <Grid style={{marginTop:20}}  container>
+                <Grid style={{marginTop:20, height: 354}}  container>
                     <Grid style={{marginRight:40}} item xs={3}>
                         <img style={{height: 106}} src={learnImg}/>
                         <Typography style={{marginTop: 10}} className={classes.subtitleLg} variant='h4'>Learn</Typography>
@@ -222,7 +222,7 @@ function Background() {
                     </Grid>
                 </Grid>
                 </div>
-                <div style={{marginTop: 70}} className={classes.element}>
+                <div style={{marginTop: 10}} className={classes.element}>
                     <Typography className={classes.title} variant='h4'>Contact Us</Typography>
                     <Typography style={{marginTop: 10}} className={classes.textBodySm}>For more information, email <a className={classes.emailText} href="mailto: takaro@gamefroot.com">takaro@gamefroot.com</a></Typography>
                 </div>

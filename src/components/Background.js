@@ -21,7 +21,7 @@ const useStyles = makeStyles({
   },
   sea: {
     position: 'absolute',
-    top: 200,
+    top: 220,
     height: 300,
     width: '100%'
   },
@@ -37,8 +37,10 @@ const useStyles = makeStyles({
     width: '100%'
   },
   waves: {
+    position: 'absolute',
     width: '100%',
-    marginBottom: -5,
+    marginBottom: -2,
+    bottom: 0
   },
   hills: {
     position: 'absolute',
@@ -59,13 +61,19 @@ function Background() {
     </div>
 
     <div className={classes.sea}>
+    <Parallax className="custom-class" x={[0, 80]} tagOuter="figure">
       <img src={waves} className={classes.waves}/>
+      <img style={{right: '100%', position: 'absolute'}} src={waves} className={classes.waves}/>
+      </Parallax>
       <img src={sea} style={{width: '100%', minHeight: 500}}/>
     </div>
     <div className={classes.hills}>
       {/* <img src={gate}/> */}
       <img src={gate} style={{position: 'absolute', right: '10%', top: 321, height: 180}}/>
-      <img src={hillTop} style={{marginBottom: -5, width: '100%'}}/>
+      <Parallax className="custom-class" x={[0, -60]} tagOuter="figure">
+      <img src={hillTop} style={{marginBottom: -5, bottom: -70, width: '100%', position: 'absolute'}}/>
+      <img src={hillTop} style={{marginBottom: -5, bottom: -70, width: '100%', left: '100%', position: 'absolute'}}/>
+      </Parallax>
       <img src={hill} className={classes.hill} style={{height: 600, width: '100%'}}/>
     </div>
     <div className={classes.ground}>
