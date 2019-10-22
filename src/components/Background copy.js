@@ -1,6 +1,5 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
-import {Parallax} from 'react-scroll-parallax'
 import { makeStyles } from "@material-ui/styles";
 import sky from '../images/sky blue.png'
 import sea from '../images/waves blue.png'
@@ -21,19 +20,20 @@ const useStyles = makeStyles({
   },
   sea: {
     position: 'absolute',
-    top: 200,
-    height: 300,
-    width: '100%'
+    top: '21vh',
+    height: '35%',
+    width: '100vw'
   },
   ground: {
     position: 'absolute',
-    top: 1050,
+    top: '97vh',
+    height: '48%',
     width: '100%'
   },
   red: {
     position: 'absolute',
-    top: 1520,
-    // height: 400,
+    top: '145vh',
+    height: '35%',
     width: '100%'
   },
   waves: {
@@ -42,7 +42,8 @@ const useStyles = makeStyles({
   },
   hills: {
     position: 'absolute',
-    top: 565,
+    height: 600,
+    top: 650,
     width: '100%',
 
   },
@@ -54,7 +55,7 @@ function Background() {
     <>
     <div className={classes.sky}>
     <img src={clouds} style={{position: 'absolute', height: '40%', right: '10%'}}/>
-      <img src={mountains} style={{position: 'absolute', height: 200, top: 55, right: 0}}/>
+      <img src={mountains} style={{position: 'absolute', height: 90, top: 20, right: 0}}/>
     <img src={sky} style={{width: '100%', minHeight: 300}}/>
     </div>
 
@@ -64,19 +65,16 @@ function Background() {
     </div>
     <div className={classes.hills}>
       {/* <img src={gate}/> */}
-      <img src={gate} style={{position: 'absolute', right: '10%', top: 321, height: 180}}/>
+      <img src={gate} style={{position: 'absolute', right: '10%', top: 400, height: 180}}/>
       <img src={hillTop} style={{marginBottom: -5, width: '100%'}}/>
-      <img src={hill} className={classes.hill} style={{height: 600, width: '100%'}}/>
+      <img src={hill} className={classes.hill} style={{minHeight:350, width: '100%'}}/>
     </div>
     <div className={classes.ground}>
-    <Parallax className="custom-class" x={[0, -50]} tagOuter="figure">
       <img src={grass} style={{position: 'absolute', marginBottom: -5, width: '100%'}}/>
-      <img src={grass} style={{position: 'absolute', marginBottom: -5, width: '100%', left: '100%'}}/>
-      </Parallax>
-      <img src={earth} style={{ height: 500, width: '100%'}}/>
+      <img src={earth} style={{height: '100%', width: '100%'}}/>
     </div>
     <div className={classes.red}>
-      <img src={red} style={{marginBottom: -5, height: '100%', width: '100%'}}/>
+      <img src={red} style={{height: '100%', width: '100%'}}/>
     </div>
 
     </>
