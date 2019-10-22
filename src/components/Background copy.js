@@ -65,7 +65,7 @@ function Background() {
     </div>
     <div className={classes.hills}>
       {/* <img src={gate}/> */}
-      <img src={gate} style={{position: 'absolute', right: '10%', top: 400, height: 180}}/>
+      <img src={gate} style={{position: 'absolute', right: '10%', top: 390, height: 180}}/>
       <img src={hillTop} style={{marginBottom: -5, width: '100%'}}/>
       <img src={hill} className={classes.hill} style={{minHeight:350, width: '100%'}}/>
     </div>

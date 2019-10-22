@@ -124,7 +124,7 @@ function Background() {
                 <Typography style={{marginBottom: 5}} className={classes.title} variant='h2'>TE HIKO TĀKARO</Typography>
                 <Typography style={{minHeight: 50}} className={classes.subtitle}>A one stop Digital Technologies solution that weaves together coding, culture and creativity</Typography>
             </div>
-            <div style={{marginTop: 80}} className={classes.element}>
+            <div style={{marginTop: 90}} className={classes.element}>
                 <Typography className={classes.title} variant='h4'>THE DOWNLOAD ZONE</Typography>
                 <Grid style={{width: '103%', marginTop: 10, overflow: 'hidden'}} container>
                     <Grid className={classes.creamBox} item xs={5}>
@@ -196,7 +196,7 @@ function Background() {
                 </Grid>
             </Grid>
             </div>
-            <div style={{marginTop: 150}} className={classes.element}>
+            <div style={{marginTop: 145}} className={classes.element}>
                 <Typography className={classes.title} variant='h4'>LEARNING METHODOLOGIES</Typography>
                 <Grid style={{marginTop:20, height: 354}}  container>
                     <Grid style={{marginRight:40}} item xs={3}>
